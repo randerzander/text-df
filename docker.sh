@@ -1,7 +1,8 @@
 CMD=$1
-CMD=${CMD:-bash}
+#CMD=${CMD:-bash}
+CMD=${CMD:-/opt/conda/envs/dsql/bin/jupyter-lab --ip="0.0.0.0" --allow-root --NotebookApp.token=""}
 
-IMAGE="randerzander/text-df"
+IMAGE="randerzander/pynds"
 
 project=${PWD##*/} 
 
